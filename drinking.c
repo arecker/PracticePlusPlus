@@ -1,24 +1,17 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
-int getAge(void)
-{
-  int a;
-  printf("How old are you?: ");
-  scanf("%d", &a);
-  return a;
-}
-
-int main(void)
+int main()
 {
   int age;
-  age = getAge();
-  
-  if (age >= 21)
-    printf("You can drink!\n");
-  else if (age < 0)
-    printf("That doesn't make any sense.");
-  else
-    printf("You cannot drink, man.\n");
+  cout << "How old are you? ";
+  cin >> age;
 
-  return 0;
+  if (age >= 21) {
+    cout << "Congratulations.  You can drink.\n";
+  } else if (age > 0 && age < 21){
+    cout << "Sorry.  No beer for you.\n";
+  } else {
+    cout << "That doesn't name any sense.\n";
+  }
 }
