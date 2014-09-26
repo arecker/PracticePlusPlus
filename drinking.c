@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
+int main(void)
 {
   int age;
   cout << "How old are you? ";
@@ -14,4 +14,6 @@ int main()
   } else {
     cout << "That doesn't name any sense.\n";
   }
+
+  return 0;
 }
